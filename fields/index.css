@@ -1,3 +1,5 @@
+@import url(../fields/droparea.css);
+
 input,
 textarea,
 select {
@@ -19,7 +21,9 @@ label {
 
 input:focus,
 textarea:focus,
-select:focus {
+select:focus,
+/* Otra sacada para verificar o focus! ESTUDAR MAIS SOBRE! */
+input[type="date"]:focus-within {
   outline: 0.25rem solid var(--surface-secondary);
   border: 0.125rem solid var(--stroke-highlight);
 }
