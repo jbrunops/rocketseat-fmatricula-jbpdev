@@ -33,6 +33,7 @@
 
           <!-- Formulário -->
           <form method="post" ="multipart/form-data">
+            <!-- Fieldset 1 -->
             <fieldset class="child-info">
               <legend>Informações da Criança</legend>
 
@@ -107,6 +108,71 @@
                   </p>
                 </div>
               </div>
+            </fieldset>
+
+            <!-- Fieldset 2 -->
+            <fieldset class="address">
+              <legend>Endereço Residencial</legend>
+              <div class="input-wrapper">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" />
+              </div>
+              <!-- flex 1 -->
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="street">RUA</label>
+                  <input
+                    type="text"
+                    id="street"
+                    name="street"
+                    value="Rua das Flores"
+                    disabled
+                  />
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="number">Número</label>
+                  <input type="number" id="number" name="number" />
+                </div>
+              </div>
+              <!-- flex 2 -->
+              <div class="flex">
+                <div class="flex">
+                  <div class="input-wrapper flex-2">
+                    <label for="city">São Paulo</label>
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      value="São Paulo"
+                      disabled
+                    />
+                  </div>
+
+                  <div class="input-wrapper flex-1">
+                    <label for="state">Estado</label>
+                    <input
+                      type="text"
+                      id="state"
+                      name="state"
+                      disabled
+                      value="SP"
+                    />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Fieldset 3 -->
+            <fieldset class="address">
+              <fieldset class="gardian">
+                <legend>Informações do Responsável</legend>
+                <div class="input-wrapper">
+                  <label for="gardian">Nome do Responsável</label>
+                  <input type="text" id="gardian" name="gardian" />
+                  <small></small>
+                </div>
+              </fieldset>
             </fieldset>
           </form>
         </div>
